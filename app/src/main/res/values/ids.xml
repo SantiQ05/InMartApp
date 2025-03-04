@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="boton_exito" type="id"/>
+    <item name="boton_carulla" type="id"/>
+    <item name="boton_colsubsidio" type="id"/>
+    <item name="boton_jumbo" type="id"/>
+</resources>

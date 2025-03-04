@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoapp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="104dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Mi Lista:"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnRecomendaciones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnRecomendaciones"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="19dp"
+        android:background="#5DD562"
+        android:contentDescription="Recomendaciones"
+        android:scaleType="fitStart"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Lista por peso:"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnRefrescarPeso"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtListaManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Lista manual:"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnAñadirPorPeso"
+        android:layout_width="377dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRefrescarPeso"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="377dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="325dp"
+        android:layout_marginEnd="14dp"
+        android:visibility="invisible"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/nombreProductoPeso"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_light"
+                android:gravity="center_vertical"
+                android:text="Nombre del producto"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/btnEditar"
+                android:layout_width="39dp"
+                android:layout_height="35dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/baseline_edit_24"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <org.eazegraph.lib.charts.PieChart
+                android:id="@+id/piechart"
+                android:layout_width="30dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:padding="6dp"
+
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="377dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="240dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="14dp"
+        android:visibility="invisible"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/nombreProductoPeso2"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_light"
+                android:gravity="center_vertical"
+                android:text="Nombre del producto"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/btnEditar2"
+                android:layout_width="39dp"
+                android:layout_height="35dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/baseline_edit_24"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <org.eazegraph.lib.charts.PieChart
+                android:id="@+id/piechart2"
+                android:layout_width="30dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="19dp"
+                android:layout_weight="1"
+                android:padding="6dp"
+
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/containerProductos"
+        android:layout_width="419dp"
+        android:layout_height="330dp"
+        android:layout_marginTop="21dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtListaManual">
+
+        <Button
+            android:id="@+id/btnAñadirManual"
+            android:layout_width="377dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:typeface="normal"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnRefrescarPeso"
+        style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#61CC65"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRecomendaciones"
+        app:srcCompat="@drawable/baseline_rotate_left_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

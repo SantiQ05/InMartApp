@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoapp"
+    tools:context=".Recomendaciones">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Mis datos"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView17"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Recomendaciones"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCerrarSesion" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Usuario:"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtUsuario"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Correo:"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtCorreo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Dirección:"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtDireccion"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Teléfono:"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtTelefono"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/txtCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
+
+    <TextView
+        android:id="@+id/txtDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
+
+    <TextView
+        android:id="@+id/txtTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="300dp"
+        android:layout_height="68dp"
+        android:backgroundTint="#83EDFF"
+        android:backgroundTintMode="add"
+        android:fontFamily="@font/montserrat_light"
+        android:text="CERRAR SESIÓN"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:iconTint="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#42BEF6"
+        app:strokeColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnRecetas"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="349dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#67EBAB"
+        android:backgroundTintMode="add"
+        android:fontFamily="@font/montserrat_light"
+        android:text="RECETAS"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:iconTint="#00BCD4"
+        app:layout_constraintBottom_toTopOf="@+id/btnCocina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:rippleColor="#42BEF6"
+        app:strokeColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnCocina"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="349dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="41dp"
+        android:backgroundTint="#83EDFF"
+        android:backgroundTintMode="add"
+        android:fontFamily="@font/montserrat_light"
+        android:text="ORGANIZACIÓN DE LA COCINA"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:iconTint="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRecetas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#42BEF6"
+        app:strokeColor="@color/black" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

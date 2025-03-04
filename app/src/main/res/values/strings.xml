@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Inmart</string>
+    <string name="title_activity_pagina_home">PaginaHome</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_list">List</string>
+    <string name="title_market">Market</string>
+    <string name="title_temperature">Temperature</string>
+</resources>
